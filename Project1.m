@@ -37,7 +37,12 @@ writematrix(matrixB, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
 matrixC = matrixA * 5;
 matrixC = matrixC-matrixB;
 
-fprintf('5A-B matrix: \n')
+fprintf('5A-B matrix: \n');
 disp(matrixC);
 writematrix(matrixC, 'CS2300P1atozerwillson.calc', 'FileType', 'Text');
+
+matrixCTrans = matrixC.';
+fprintf('5A-B Transposed: \n');
+disp(matrixCTrans);
+writematrix(matrixCTrans, 'CS2300P1atozerwillson.trans', 'FileType', 'Text');
 
