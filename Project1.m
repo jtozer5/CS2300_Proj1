@@ -32,4 +32,4 @@ for c = 1:colB
 end
 fprintf('B martix: \n')
 disp(matrixB);
-writematrix(matrixA, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
+writematrix(matrixB, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
