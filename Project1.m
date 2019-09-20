@@ -11,9 +11,11 @@ fprintf('%d\n', col);
 
 matrixA = zeros(rows, col);
 
+i = 3
 for c = 1:col
     for r = 1:row
-        matrixA(r, c) = data(3);
+        matrixA(c, r) = data(i);
+        i = i + 1;
     end
 end
 disp(matrixA);
