@@ -17,7 +17,7 @@ for c = 1:colA
         i = i + 1;
     end
 end
-fprintf('A martix: \n')
+fprintf('A matrix: \n')
 disp(matrixA);
 writematrix(matrixA, 'CS2300P1atozerwillson.outA', 'FileType', 'Text');
 
@@ -30,14 +30,14 @@ for c = 1:colB
         i = i + 1;
     end
 end
-fprintf('B martix: \n')
+fprintf('B matrix \n')
 disp(matrixB);
 writematrix(matrixB, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
 
 matrixC = matrixA * 5;
 matrixC = matrixC-matrixB;
 
-fprintf('5A-B martix: \n')
+fprintf('5A-B matrix: \n')
 disp(matrixC);
 writematrix(matrixC, 'CS2300P1atozerwillson.calc', 'FileType', 'Text');
 
