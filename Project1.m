@@ -19,3 +19,4 @@ for c = 1:col
     end
 end
 disp(matrixA);
+writematrix(matrixA, 'CS2300P1atozerwillson.outA', 'FileType', 'Text');
