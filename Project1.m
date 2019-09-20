@@ -10,8 +10,8 @@ fprintf('columns: ')
 fprintf('%d\n', col);
 
 matrixA = zeros(rows, col);
-//added a i variable that counts through and switched the (r, c) to (c, r) in line 17
-i = 3
+% added a i variable that counts through and switched the (r, c) to (c, r) in line 17
+i = 3;
 for c = 1:col
     for r = 1:row
         matrixA(c, r) = data(i);
