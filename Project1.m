@@ -1,22 +1,35 @@
-data = dlmread('Amatrix');
+dataA = dlmread('Amatrix');
+dataB = dlmread('Bmatrix');
 
-row = data(1);
-col = data(2);
-fprintf('data: ')
-disp(data);
-fprintf('rows: ');
-fprintf('%d\n', row);
-fprintf('columns: ')
-fprintf('%d\n', col);
+rowA = dataA(1);
+colA = dataA(2);
 
-matrixA = zeros(rows, col);
+rowB = dataB(1);
+colB = dataB(2);
+
+
+matrixA = zeros(rowA, colA);
 % added a i variable that counts through and switched the (r, c) to (c, r) in line 17
 i = 3;
-for c = 1:col
-    for r = 1:row
-        matrixA(c, r) = data(i);
+for c = 1:colA
+    for r = 1:rowA
+        matrixA(c, r) = dataA(i);
         i = i + 1;
     end
 end
+fprintf('A martix: \n')
 disp(matrixA);
 writematrix(matrixA, 'CS2300P1atozerwillson.outA', 'FileType', 'Text');
+
+matrixB = zeros(rowB, colB);
+% added a i variable that counts through and switched the (r, c) to (c, r) in line 17
+i = 3;
+for c = 1:colB
+    for r = 1:rowB
+        matrixB(c, r) = dataB(i);
+        i = i + 1;
+    end
+end
+fprintf('B martix: \n')
+disp(matrixB);
+writematrix(matrixA, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
