@@ -33,3 +33,11 @@ end
 fprintf('B martix: \n')
 disp(matrixB);
 writematrix(matrixB, 'CS2300P1atozerwillson.outB', 'FileType', 'Text');
+
+matrixC = matrixA * 5;
+matrixC = matrixC-matrixB;
+
+fprintf('5A-B martix: \n')
+disp(matrixC);
+writematrix(matrixC, 'CS2300P1atozerwillson.calc', 'FileType', 'Text');
+
