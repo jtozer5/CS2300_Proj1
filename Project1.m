@@ -1,3 +1,17 @@
+%{
+Josh Tozer & Nathan Willson
+CS 2300 0012
+Project 1
+Sat Sep 21, 2019 at 11:59 pm
+This project reads the matrix A and matrix B data and outputs the following data:
+1. Writes matrix A to a file named “CS2300P1atozerwillson.outA”.
+2. Write matrix B to a file named “CS2300P1atozerwillson.outB” and to stdout.
+3. Calculate 5A – B using the A and B matrices above. Write this result to 
+“CS2300P1atozerwillson.calc".
+4. Write the transpose of the result in part 3 (just above) to a file 
+“CS2300P1atozerwillson.trans”.
+%}
+
 dataA = dlmread('Amatrix');
 dataB = dlmread('Bmatrix');
 
@@ -9,7 +23,7 @@ colB = dataB(2);
 
 
 matrixA = zeros(rowA, colA);
-% added a i variable that counts through and switched the (r, c) to (c, r) in line 17
+
 i = 3;
 for c = 1:colA
     for r = 1:rowA
@@ -22,7 +36,7 @@ disp(matrixA);
 writematrix(matrixA, 'CS2300P1atozerwillson.outA', 'FileType', 'Text');
 
 matrixB = zeros(rowB, colB);
-% added a i variable that counts through and switched the (r, c) to (c, r) in line 17
+
 i = 3;
 for c = 1:colB
     for r = 1:rowB
